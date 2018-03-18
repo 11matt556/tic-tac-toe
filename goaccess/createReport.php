@@ -1,5 +1,5 @@
 <?php
-$report = $_GET['report'];
+$report = $_GET['reportType'];
 
 if(strlen($report) > 7){
    header("HTTP/1.1 404 Not Found");
@@ -7,11 +7,9 @@ if(strlen($report) > 7){
 }
 
 error_log(shell_exec("whoami")." REQUESTED REPORT: ".$report);
-if($report === "access"){
-	shell_exec("logreport -a");
-}
-else if($report === "vhost"){
-	shell_exec("logreport -v");
+
+if($report === "default"){
+	shell_exec('sudo logreport');
 }
 else{
 	$output = "INVALID REQUEST. BOT SUSPECTED";

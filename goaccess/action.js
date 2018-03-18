@@ -3,10 +3,10 @@ var createReport = function(report){
 	console.log(report);
 	
 	axios({ //Send request to createReport. MAKE SURE TO VERIFY SERVER SIDE
-			method: 'post',
+			method: 'get',
 			url: 'https://howell-info.us/goaccess/createReport.php',
 			params: {
-				report: report
+				reportType: report
 			},
 			responseType: 'json'
 		})
@@ -17,10 +17,8 @@ var createReport = function(report){
 }
 
 var onLoad = function() {
-	var vhostButton = document.getElementById("vhost");
-	var accessButton = document.getElementById("access");
-	vhostButton.onclick = function(){createReport("vhost")}
-	accessButton.onclick = function(){createReport("access")};
+	var reportbutton = document.getElementById("report");
+	reportbutton.onclick = function(){createReport("default")};
 
 
 };
