@@ -74,10 +74,10 @@
 		</div>
 	</div>
 </div>  <!-- container -->
-<script src="../../../js/jquery-1.11.2.min.js" type="text/javascript"></script>
-<script src="../../../js/bootstrap.js" type="text/javascript"></script>
-<script src="phoneNumber.js" type="text/javascript"></script>
-<script src="../../../js/axios.min.js" type="text/javascript"></script>
+<script src="../assets/jquery-1.11.2.min.js" type="text/javascript"></script>
+<script src="../assets/bootstrap.js" type="text/javascript"></script>
+<script src="../assets/phoneNumber.js" type="text/javascript"></script>
+<script src="../assets/axios.min.js" type="text/javascript"></script>
 <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAnD-iJLoSUxsEBcApXMk7surx6WLj-R90&callback=placeSearch"></script>
 
 </body>
